@@ -3,10 +3,10 @@ import Image from "next/image";
 export default function Home() {
   return (
     <>
-      <div>
-        <nav>
+      <div className="md:flex text-sky-600">
+        <nav className="md:flex-shrink-0">
           <Link href="/">
-            <h1 className="text-3xl font-bold underline">Food Ninja</h1>
+            <h1 className="text-3xl-sky-900 font-bold underline">Food Ninja</h1>
           </Link>
 
           <ul>
@@ -43,15 +43,17 @@ export default function Home() {
           <h4>Latest Recipes</h4>
 
           <div>
-            {/* recipe cards go here */}
+            recipe cards go here
             <div>
-              {/* <Image
-                src="@/Images/Easy-Five-Bean-Chilli-1jpg.jpg"
+              <Image
+                className="rounded-lg md:w-56"
+                src="/Images/Easy-Five-Bean-Chilli-1jpg.jpg"
                 alt="5 Bean Chill"
-                width="200px"
-              >
-                5 Bean Chilli Stew
-              </Image> */}
+                width="200"
+                height="200"
+              />
+              <p>5 Bean Chilli Stew</p>
+              <p>recipe by Mario</p>
             </div>
           </div>
         </div>
